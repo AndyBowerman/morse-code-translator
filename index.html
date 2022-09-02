@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 style="font-family: monospace; color: #f4f4f4">Morse-Code-Translator</h1>
+    <header style="text-align: center; font-family: monospace; color: #f4f4f4">
+        <h1 style="font-size: 34px">Morse-Code-Translator</h1>
+        <p style="font-size: 20px">When entering Morse Code seperate letters with a space and words with a '/'</p>
     </header>
 
     <main class="main">
-        <input type="text" placeholder="Enter text here" class="main__input">
-        <div class="main__output"></div>
+        <div class="main__containers">
+            <input type="text" placeholder="Enter text here" id="english__input" class="main__input">
+            <div id="morse__output" class="main__output"></div>
+        </div>
+        <div class="main__containers">
+            <input type="text" placeholder="Enter morse code here" id="morse__input" class="main__input">
+            <div id="english__output" class="main__output"></div>
+        </div>
+        
     </main>
 
     <script src="main.js"></script>

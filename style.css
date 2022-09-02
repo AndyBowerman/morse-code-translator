@@ -18,7 +18,6 @@ body {
     margin: 20px;
     border: 1px black solid;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 50%;
@@ -28,23 +27,30 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+.main__containers {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .main__input {
-    width: 90%;
-    font-size: 18px;
-    text-align: center;
+    width: 100%;
+    font-size: 20px;
     height: 35%;
-    border-radius: 5px;
+    text-align: center;
     background-color: #f4f4f4;
 }
 
 .main__output {
-    border: 1px black solid;
-    width: 90%;
-    font-size: 18px;
+    width: 100%;
+    font-size: 20px;
     height: 35%;
+    background-color: #f4f4f4;
+    border: 1px black solid;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
-    background-color: #f4f4f4;
 }

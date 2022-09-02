@@ -25,18 +25,11 @@ export const morseToEnglish = (string) => {
     }
 
     const arr = string.trim().split(' ');
-    const newArr = arr.map(item => englishLookUp[item]).join('')
-    const newerArr = newArr.split('.');
-
-    const amendArr = newerArr.map(item => item.trim().split(''))
-    const capArr = amendArr.map(item => item.map((letter, index) => {
-        if(index == 0) {
-            return letter.toUpperCase();
-        } else {
-            return letter;
-        }
-    }))
-    const final = capArr.map(item => item.join(''));
+    const translatedString = arr.map(item => englishLookUp[item]).join('')
+    const splitBySentence = translatedString.split('.');
+    const nestedArr = splitBySentence.map(item => item.trim().split(''))
+    const nestedCapArr = nestedArr.map(item => item.map((letter, index) => index == 0 ? letter.toUpperCase() : letter))
+    const final = nestedCapArr.map(item => item.join(''));
     return final.join('. ').trim();
 }
 
