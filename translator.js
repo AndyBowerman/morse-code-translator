@@ -12,4 +12,16 @@ export const translateToMorse = (string) => {
     return newArr.includes('! ') ? `Warning, unknown symbol: ${newArr.join('').trim()}` : newArr.join('').trim();
 }
 
-module.exports = {translateToMorse};
+
+
+
+export const morseToEnglish = (string) => {
+
+}
+
+
+
+
+
+
+module.exports = {translateToMorse, morseToEnglish};

@@ -1,4 +1,4 @@
-import { translateToMorse } from "./translator";
+import { translateToMorse, morseToEnglish } from "./translator";
 
 
 describe("Testing translateToMorse", () => {
@@ -46,4 +46,13 @@ describe("Testing translateToMorse", () => {
         let result = translateToMorse('£4.99')
         expect(result).toBe("Warning, unknown symbol: ! ....- .-.-.- ----. ----.")
     })
+})
+
+
+
+
+
+
+describe("Testing morseToEnglish", () => {
+
 })
